@@ -12,18 +12,11 @@ We are not allowed to redistribute the data, but the original sources of the dat
 
 ## File description
 
-* 01.get.pos.py/02.get.phrases.py/03.get.posneg.phrases.py: extract review texts to generate the sentiment phrases as the first step.
+* 01.get.pos.py/02.get.phrases.py/03.get.posneg.phrases.py: To extract review texts to generate the sentiment phrases as the first step.
+* get.top.posneg.py: To get some top phrases in different domains.
+* classification.py/cross.classification.py: classification.py is the classifier for in-domain and cross.classification.py is the one for cross-domain experiment.
+* print.cross.results.py/print.results.py: To print the results. It could be run like 'python print.results.py maxent'
 
-* classification.py/cross.classification.py: classification.py is for in-domain and cross.classification.py is for cross-domain experiment.
-* 'python print.results.py maxent' for printing the results.
-* get.top.posneg.py
-
-## Running
-To run the classifier:
-
-python all.nonstruct.classification.py [features] [time] [window] [months]
-
-where: [features] is the feature set, e.g. multiw2v [time] is the time in seconds used for the classification, i.e. the earliness of predictions [window] is the percentage of the data used as the sliding window, ranging from 0 to 1 [months] is the number of months used for training, from 1 to 24
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)
